@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:simpleType name="tipoTrianero">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="adoptado" />
+            <xs:enumeration value="nacido" />
+            <xs:enumeration value="residente" />
+            <xs:enumeration value="extranjero" />
+        </xs:restriction>
+    </xs:simpleType>
+              
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" minOccurs="1"
+                            maxOccurs="unbounded">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="2" />
+                            <xs:maxLength value="25" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="apellido"  minOccurs="2"
+                            maxOccurs="2">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="2" />
+                            <xs:maxLength value="25" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="fechanacimiento" type="xs:date"
+                            maxOccurs="1"/>
+                <xs:element name="numerodocumento" >
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[0-9]{8}[A-Z]"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="trianero">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="tipoTrianero">
+                                <xs:attribute name="barrio" type="xs:string" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="puntuacion" type="xs:decimal" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+<!--
+Restrictions for Datatypes
+Constraint	Description
+enumeration	Defines a list of acceptable values
+fractionDigits	Specifies the maximum number of decimal places allowed. Must be equal to or greater than zero
+length	Specifies the exact number of characters or list items allowed. Must be equal to or greater than zero
+maxExclusive	Specifies the upper bounds for numeric values (the value must be less than this value)
+maxInclusive	Specifies the upper bounds for numeric values (the value must be less than or equal to this value)
+maxLength	Specifies the maximum number of characters or list items allowed. Must be equal to or greater than zero
+minExclusive	Specifies the lower bounds for numeric values (the value must be greater than this value)
+minInclusive	Specifies the lower bounds for numeric values (the value must be greater than or equal to this value)
+minLength	Specifies the minimum number of characters or list items allowed. Must be equal to or greater than zero
+pattern	Defines the exact sequence of characters that are acceptable
+totalDigits	Specifies the exact number of digits allowed. Must be greater than zero
+whiteSpace	Specifies how white space (line feeds, tabs, spaces, and carriage returns) is handled
+-->
+

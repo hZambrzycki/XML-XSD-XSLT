@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<persona
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Ejercicio4XSD.xsd'
+    puntuacion="10.5">
+    <nombre>Ana</nombre>
+
+    <apellido>Blanco</apellido>
+
+    <apellido>Benito</apellido>
+
+    <fechanacimiento>1976-01-24</fechanacimiento>
+
+    <numerodocumento>07698564L</numerodocumento>
+
+    <trianero barrio="hola">adoptado</trianero>
+
+</persona>
+
