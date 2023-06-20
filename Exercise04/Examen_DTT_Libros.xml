@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE libros [
+
+<!ELEMENT libros (libro*)>
+
+<!ELEMENT libro (titulo,autor,fecha_edicion*)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT fecha_edicion (#PCDATA)>
+<!ATTLIST titulo editorial CDATA  #IMPLIED>
+
+<!ATTLIST titulo isbn ID #IMPLIED>
+
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+
+<libros>
+<libro>
+<titulo editorial="Planeta" isbn="C386379-001"> Cinco horas con Mario </titulo>
+<autor> Miguel Delibes </autor>
+<fecha_edicion>1967</fecha_edicion>
+</libro>
+<libro>
+<titulo> Cien años de soledad  </titulo>
+<autor> Gabriel García Marquez </autor>
+</libro>
+</libros>
+

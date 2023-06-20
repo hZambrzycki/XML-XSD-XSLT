@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tienda_juegos [
+<!ELEMENT tienda_juegos (juego*)>
+<!ELEMENT juego (titulo,plataforma+,lanzamiento,genero)>
+<!ATTLIST juego id ID #REQUIRED>
+<!ATTLIST juego ofertas CDATA #IMPLIED >
+<!ATTLIST juego similares IDREFS >
+<!ELEMENT titulo (#PCDATA) #REQUIRED>
+<!ELEMENT plataforma (#PCDATA) #REQUIRED>
+<!ATTLIST plataforma num ID #REQUIRED>
+<!ELEMENT lanzamiento EMPTY>
+<!ATTLIST lanzamiento fecha NMTOKEN #REQUIRED>
+<!ELEMENT genero (#PCDATA) (Rol|Aventuras|Accion|Futbol|Otros) #REQUIRED>
+]>
+<tienda_juegos>
+<juego id="J040" oferta="Envio Gratis">
+<título>DOOM Eternal Deluxe Edition</título>
+<plataforma num="01">PC</plataforma>
+<plataforma num="02">PlayStation 4</plataforma>
+<plataforma num="03">Xbox One</plataforma>
+<lanzamiento fecha="2019-11-22" />
+<genero>Acción</genero>
+</juego>
+<juego id="J050" oferta="Incluye Regalo">
+<título>Final Fantasy VII Remake - Deluxe Edition </título>
+<plataforma num="02">PlayStation 4</plataforma>
+<lanzamiento fecha="2019-03-11" />
+<genero>Rol</genero>
+</juego>
+<juego id="J250" oferta="Incluye Regalo" similares="J050">
+<título>Final Fantasy XIV Shadowbringers </título>
+<plataforma num="01">PC</plataforma>
+<plataforma num="02">PlayStation 4</plataforma>
+<lanzamiento fecha="2019-07-02" />
+<genero>Rol</genero>
+</juego>
+</tienda_juegos>
