@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+    <xs:attribute name="barrio" type="xs:string" />
+    <xs:element name="personas">
+        <xs:complexType>
+            <xs:sequence>
+                 
+                <xs:element name="persona" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                       
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="apellido" type="xs:string" />
+                            <xs:element name="fechanacimiento" type="xs:date"/>
+                            <xs:element name="numerodocumento" type="xs:int"/>
+                                      
+                            <xs:element name="trianero" >
+
+                            <xs:complexType>
+                               
+                                    <xs:simpleContent>
+                                        
+                                    <xs:extension base="xs:boolean" >
+                                    <xs:attribute name="barrio" type="xs:string" use="required"/>
+                                    </xs:extension>
+                                    
+                                </xs:simpleContent>
+                                
+                              
+                            </xs:complexType>
+                              
+                              
+                            </xs:element>
+                           
+                        </xs:sequence>
+                        <xs:attribute name="puntuacion" type="xs:double"/>     
+     
+                    </xs:complexType>
+                    
+                
+                </xs:element>
+                  
+            </xs:sequence>
+
+        </xs:complexType>
+          
+    </xs:element>
+</xs:schema>
