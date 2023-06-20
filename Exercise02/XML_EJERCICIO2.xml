@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<matricula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Ejercicio1.xsd">
+	<personal>
+            <dni numero="99223366M"></dni>
+		<nombre>Juan Pardo Martín</nombre>
+		<titulacion>Ingeniería Informática</titulacion>
+		<curso_academico>2014/2015</curso_academico>
+		<domicilios>
+			<domicilio tipo="familiar">
+				<nombre>C/ Sol no1</nombre>
+			</domicilio>
+			<domicilio tipo="habitual">
+				<nombre>C/Luna no2</nombre>
+			</domicilio>
+		</domicilios>
+	</personal>
+	<pago>
+		<tipo_matricula>Matrícula Ordinaria</tipo_matricula>
+		<precio moneda="euro">400</precio>
+	</pago>
+        <personal>
+            <dni numero="82828282"</dni>
+		<nombre>Juan Pardo Martín</nombre>
+		<titulacion>Ingeniería Informática</titulacion>
+		<curso_academico>2014/2015</curso_academico>
+		<domicilios>
+			<domicilio tipo="familiar">
+				<nombre>C/ Sol no1</nombre>
+			</domicilio>
+			<domicilio tipo="habitual">
+				<nombre>C/Luna no2</nombre>
+			</domicilio>
+		</domicilios>
+	</personal>
+	<pago>
+		<tipo_matricula>Matrícula Ordinaria</tipo_matricula>
+		<precio moneda="euro">400</precio>
+	</pago>
+</matricula>
