@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE nota[
+    <!ELEMENT nota (para, de, titulo, contenido)>
+    <!ELEMENT para (#PCDATA)>
+    <!ELEMENT de (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT contenido (#PCDATA)>
+  ]>
+<nota>
+    <para>Pedro</para>
+    <de>Laura</de>
+    <titulo>Recordatorio</titulo>
+    <contenido>A las 7:00 pm en la puerta del teatro</contenido>
+</nota>
+
+
