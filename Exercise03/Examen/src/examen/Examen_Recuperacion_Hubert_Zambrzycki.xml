@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<!-- EJERCICIO 4.2 -->
+
+<!--
+<!DOCTYPE inventores [
+<!ELEMENT inventores (inventor*)>
+<!ELEMENT inventor EMPTY>
+<!ATTLIST inventor invento CDATA #REQUIRED>
+<!ATTLIST inventor nombre CDATA #IMPLIED>
+]>
+<inventores>
+   <inventor nombre="Robert Adler" invento="Mando a distancia"/>
+   <inventor nombre="Lazslo Josef Biro" invento="Boligrafo"/>
+   <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos"/>
+   <inventor invento="Fuego"/>
+</inventores>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EJERCICIO 4.1 -->
+
+<!--
+<!DOCTYPE libro[
+<!ELEMENT libro (#PCDATA)>
+<!ATTLIST libro autor CDATA #REQUIRED>
+]>
+<libro autor="Mario Vargas Llosa"> Pantaleon y las visitadoras </libro>
+-->
+
+
+
+
+
+
+<!-- EJERCICIO 3 -->
+
+
+<!DOCTYPE listaHoteles [
+<!ELEMENT listaHoteles (hotel+)>
+<!ELEMENT hotel (nombre, descripcion?, estrellas, habitacion+) >
+<!ATTLIST hotel id ID #REQUIRED>
+<!ATTLIST hotel similares IDREFS #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT estrellas EMPTY>
+<!ATTLIST estrellas n CDATA #REQUIRED>
+<!ELEMENT habitacion (tvPlana|insonorizada|minibar)*>
+<!ELEMENT tvPlana EMPTY>
+<!ELEMENT insonorizada EMPTY>
+<!ELEMENT minibar EMPTY>
+<!ATTLIST habitacion tipo (sencilla|doble|triple|doble_vistas|familiar) "doble">
+<!ATTLIST habitacion precio CDATA #REQUIRED>
+<!ATTLIST habitacion capacidad CDATA #REQUIRED>
+<!ATTLIST habitacion metros2 CDATA #REQUIRED>
+]>
+<listaHoteles>
+    <hotel id="HSEG23" similares="HSEG24 HSEG25">
+        <nombre>Gran Hotel Corona Sol</nombre>
+        <descripcion>Este moderno hotel ofrece habitaciones amplias con conexión Wi-Fi gratuita y 
+            TV por cable de pantalla plana. Está situado junto al 
+            hospital de la Santísima Trinidad y a 10 minutos a pie de la 
+            Plaza Mayor de Salamanca.</descripcion>
+        <estrellas n="3" />
+        <habitacion tipo="doble" precio="60" capacidad="2" metros2="18">
+            <tvPlana/>
+        </habitacion>
+     </hotel>
+    <hotel id="HSEG24" similares="HSEG23">
+        <nombre>Hotel Salamanca Montalvo</nombre>
+        <descripcion>El Hotel Salamanca Montalvo es un establecimiento 
+            moderno que ofrece WiFi y aparcamiento gratuitos y se encuentra 
+            en la Vía de la Plata, a solo 5 minutos en coche del centro de 
+            Salamanca. Además, hay una parada de autobús a 50 metros.
+        </descripcion>
+        <estrellas n="4" />
+        <habitacion tipo="doble" precio="67" capacidad="2" metros2="21">
+            <tvPlana/>
+            <insonorizada/>  
+        </habitacion>
+        <habitacion tipo="doble_vistas"  precio="95" capacidad="2" metros2="24">
+            <tvPlana/>
+            <minibar/>  
+        </habitacion> 
+    </hotel>
+    <hotel id="HSEG25" similares="HSEG23">
+        <nombre>Hotel Hotel San Polo</nombre>
+        <descripcion>El Hotel San Polo se encuentra en el centro histórico de 
+            Salamanca, alrededor de las ruinas de la iglesia románica de 
+            San Polo. Goza de vistas panorámicas hermosas a la catedral de 
+            Salamanca, situada a solo 150 metros.
+        </descripcion>
+        <estrellas n="3" />
+        <habitacion tipo="triple"  precio="100" capacidad="3" metros2="24"> 
+            <minibar />
+            <tvPlana />
+            <insonorizada/>  
+        </habitacion> 
+        <habitacion tipo="doble" precio="80" capacidad="2" metros2="21">
+            <tvPlana/>
+            <insonorizada/>
+            <minibar/>  
+        </habitacion>
+    </hotel>
+</listaHoteles>

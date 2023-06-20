@@ -1,0 +1,98 @@
+html, body, h3, p, ul, li, a, nav, footer {
+	padding: 0;
+	margin: 0;
+}
+nav, main, section, article, footer {
+	display: block;
+}
+nav {
+	background-color: black;
+	padding: 20px;
+	text-align: left;
+	position: fixed;
+	width: 100%;
+	
+}
+li a {
+	color: white;
+    font-family: Arial, sans-serif;
+    list-style-type: none;
+	}
+li {
+	text-align: center;
+	display: inline;
+    border-right: 2px solid white;
+    padding: 20px;
+}
+
+.cabecera {
+	margin-top: 30px;
+	padding: 30px;
+	font-size: 25px;
+	border-bottom: 1px dashed;
+	text-align: left;
+}
+body {
+	width: 1000px;
+	display: inline;
+}
+article {
+	overflow-y: scroll;
+	overflow-x: scroll;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+    height: 330px;
+    
+}
+section {
+	width: 300px;
+    display: inline-block;
+    text-align: center;
+	margin-right: auto;
+	margin-left: 20px;
+}
+.titular {
+	background-color: black;
+	color: white;
+}
+.titular1 {
+	background-color: black;
+	color: white;
+	padding: 22px;
+}
+.texto {
+	margin-top: 20px;
+}
+.autor {
+	color: gray;
+	text-align: left;
+}
+main {
+    display: inline-block;
+	margin-top: 40px;
+	
+	
+	margin-left: 10px;
+}
+
+div {
+	margin-top: 5px;
+}
+img {
+	margin-bottom: 15px;
+}
+
+footer {
+  font-size: 12px;
+  position: fixed;
+  width: 30%;
+  padding: 1px;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  text-align: right;
+}
