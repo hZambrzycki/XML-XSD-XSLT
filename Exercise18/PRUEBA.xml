@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<examen fecha="2014-06-11" curso="Lenguajes y Estandares Web" tipo="test"
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Examen.xsd'>
+    <autor>Jose perez gomez</autor>
+    <preguntas>
+        <pregunta tipo="test" codigo="p1">
+            <puntos acierto="1" fallo="0.1"></puntos>
+            <enunciado>La masa</enunciado>
+            <respuesta item="a">blabla</respuesta>
+            <respuesta item="b">blabla</respuesta>
+            <respuesta item="c">blabla</respuesta>
+            <respuesta item="d">blabla</respuesta>
+            <solucion refitem="d">blabla</solucion>
+        </pregunta>
+        <pregunta tipo="test" codigo="p2">
+            <puntos acierto="1" fallo="0.1"></puntos>
+            <enunciado>blabla</enunciado>
+            <respuesta item="a">bbbb</respuesta>
+            <respuesta item="b">bbbb</respuesta>
+            <respuesta item="c">bbbb</respuesta>
+            <respuesta item="d">blabla</respuesta>
+            <solucion refitem="b"></solucion>
+        </pregunta>
+   
+    </preguntas>
+
+</examen>

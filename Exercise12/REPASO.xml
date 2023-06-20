@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--  DTT NO INTERNA -->
+<!--
+<!DOCTYPE reyesEspañoles [
+<!ELEMENT reyesEspañoles (rey*)>
+<!ELEMENT rey (nombre, padre, madre)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT padre (#PCDATA)>
+<!ELEMENT madre (#PCDATA)>
+]> 
+<reyesEspañoles>
+    <rey>
+        <nombre>Felipe III</nombre>
+        <padre>Felipe II</padre>
+        <madre>Ana de Austria</madre>
+    </rey>
+    <rey>
+        <nombre>Juana la Loca</nombre>
+        <padre>Fernando el Católico</padre>
+        <madre>Isabel la Católica</madre>
+    </rey>
+    <rey>
+        <nombre>Carlos I</nombre>
+        <padre>Felipe el Hermoso</padre>
+        <madre>Juan la Loca</madre>
+    </rey>
+</reyesEspañoles>
+-->
+<!--
+<!DOCTYPE numeros [
+<!ELEMENT numeros (#PCDATA)>
+]>
+<numeros>
+25
+</numeros>
+-->
+<!--
+<!DOCTYPE letras [
+<!ELEMENT letras (letra)>
+<!ELEMENT letra (#PCDATA)>
+]>
+<letras>
+<letra>m</letra>
+</letras>
+-->
+<!--
+<!DOCTYPE colores [
+<!ELEMENT colores (color*)>
+<!ELEMENT color (#PCDATA)>
+]>
+<colores>
+<color>azul marino</color>
+<color>negro</color>
+<color>amarillo</color>
+</colores>
+-->
+<!--
+<!DOCTYPE musicos [
+<!ELEMENT musicos (musico*)>
+<!ELEMENT musico ((nombre | apodo), fechaNacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apodo (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+<musicos>
+    <musico>
+        <nombre>Antonio Vivaldi</nombre>
+        
+        <fechaNacimiento>4 de marzo de 1678</fechaNacimiento>
+    </musico>
+    <musico>
+      
+        <apodo>El viejo peluca</apodo>
+        <fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+    </musico> 
+</musicos>
+
+-->
+<!--
+<!DOCTYPE agenda [
+<!ELEMENT agenda (contacto*)>
+<!ELEMENT contacto (nombre, telefonoFijo*, telefonoMovil+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefonoFijo (#PCDATA)>
+<!ELEMENT telefonoMovil (#PCDATA)>
+]>
+<agenda>
+    <contacto>
+        <nombre>Ayuntamiento</nombre>
+        <telefonoFijo>010</telefonoFijo>
+        <telefonoMovil>Desconocido</telefonoMovil>
+    </contacto>
+    <contacto>
+        <nombre>Emergencias</nombre>
+        <telefonoFijo>112 (Unión Europea)</telefonoFijo>
+        <telefonoFijo>911</telefonoFijo>
+        <telefonoMovil>Desconocido</telefonoMovil>
+    </contacto>
+</agenda>
+-->
+
+<!-- DTD INTERNA -->
+
+<!--
+<!DOCTYPE efemerides [
+<!ELEMENT efemerides (efemeride)*>
+<!ELEMENT efemeride (fecha, hecho)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hecho (#PCDATA)>
+]>
+<efemerides>
+    <efemeride>
+        <fecha>20 de julio de 1969</fecha>
+        <hecho>Llegada del hombre a la Luna</hecho>
+    </efemeride>
+    <efemeride>
+        <fecha>12 de octubre de 1492</fecha>
+        <hecho>Llegada de Colón a América</hecho>
+    </efemeride>
+    <efemeride>
+        <fecha>6 de abril de 1909</fecha>
+        <hecho>llegada de Robert Peary al Polo Norte</hecho>
+    </efemeride>
+</efemerides>
+-->
+<!--
+<!DOCTYPE aeropuertos [
+<!ELEMENT aeropuertos (aeropuerto+)>
+<!ELEMENT aeropuerto (nombre|cerrado)+>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cerrado EMPTY>
+]>
+
+<aeropuertos>
+    <aeropuerto>
+        <nombre>Berlín Schönefeld (SFX)</nombre>
+    </aeropuerto>
+    <aeropuerto>
+        <nombre>Berlín Tempelhof (THF)</nombre>
+        <cerrado />
+    </aeropuerto>
+</aeropuertos>
+-->
+<!--
+<!DOCTYPE vuelos [
+<!ELEMENT vuelos (vuelo*)>
+<!ELEMENT vuelo ((origen,destino)|(destino ,origen))>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+]>
+
+<vuelos>
+    <vuelo>
+        <origen>Valencia (VLC)</origen>
+        <destino>Londres Heathrow (LHR)</destino>
+    </vuelo>
+    <vuelo>
+        <destino>Berlín Schönefeld (SFX)</destino>
+        <origen>Paris Charles de Gaulle (CDG)</origen>
+    </vuelo>
+</vuelos>
+-->
+<!--
+<!DOCTYPE contabilidad [
+<!ELEMENT contabilidad (apunte*)>
+<!ELEMENT apunte ((ingreso | gasto)* , fecha, cantidad, concepto)>
+<!ELEMENT ingreso EMPTY>
+<!ELEMENT gasto EMPTY>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT concepto (#PCDATA)>
+]>
+
+<contabilidad>
+    <apunte>
+        <ingreso />
+        <fecha>24 de febrero de 2011</fecha>
+        <cantidad>1800,00 €</cantidad>
+        <concepto>Salario</concepto>
+    </apunte>
+    <apunte>
+        <gasto />
+        <fecha>28 de febrero de 2011</fecha>
+        <cantidad>74,25 €</cantidad>
+        <concepto>Recibo luz</concepto>
+    </apunte>
+</contabilidad>
+-->
+
+<!-- DTD INTERNA -->
+
+<!--
+<!DOCTYPE reyesEspañoles [
+<!ELEMENT reyesEspañoles ((rey|reina)*)>
+<!ELEMENT rey (nombre, padre, madre)>
+<!ELEMENT reina (nombre, padre, madre)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT padre (#PCDATA)>
+<!ELEMENT madre (#PCDATA)>
+]>
+<reyesEspañoles>
+    <rey>
+        <nombre>Felipe III</nombre>
+        <padre>Felipe II</padre>
+        <madre>Ana de Austria</madre>
+    </rey>
+    <reina>
+        <nombre>Juana la Loca</nombre>
+        <padre>Fernando el Católico</padre>
+        <madre>Isabel la Católica</madre>
+    </reina>
+    <rey>
+        <nombre>Carlos I</nombre>
+        <padre>Felipe el Hermoso</padre>
+        <madre>Juan la Loca</madre>
+    </rey>
+</reyesEspañoles>
+-->
+
+<!--
+<!DOCTYPE paises [
+<!ELEMENT paises (pais)*>
+<!ELEMENT pais (nombre, unionEuropea?, otan?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT unionEuropea EMPTY>
+<!ELEMENT otan EMPTY>
+]>
+<paises>
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea />
+        <otan />
+    </pais>
+    <pais>
+        <nombre>Noruega</nombre>
+        <otan />
+    </pais>
+    <pais>
+        <nombre>Austria</nombre>
+        <unionEuropea />
+    </pais>
+</paises>
+-->
+
+<!-- DTD NO INTERNA -->
+
+<!--
+<!DOCTYPE persona [
+<!ELEMENT persona EMPTY>
+<!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+<persona nombre="Abascal" />
+-->
+
+<!--
+<!DOCTYPE pelicula [
+<!ELEMENT pelicula EMPTY>
+<!ATTLIST pelicula titulo CDATA #IMPLIED>
+]>
+<pelicula titulo="La diligencia" />
+-->
+
+<!--
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+<cuadros>
+<cuadro titulo="Adán_y_Eva1" autor="Alberto Durero" />
+<cuadro autor="Lucas Cranach, el viejo" titulo="Adán_y_Eva2" />
+</cuadros>
+-->
+
+<!--
+<!DOCTYPE listaCompra [
+<!ELEMENT listaCompra (item*)>
+<!ELEMENT item EMPTY>
+<!ATTLIST item nombre CDATA #REQUIRED>
+<!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+<listaCompra>
+<item nombre="leche" cantidad="12 litros" />
+<item nombre="pan" cantidad="3 barras de cuarto" />
+</listaCompra>
+-->
+
+<!--
+<!DOCTYPE jugadoresFutbol [
+<!ELEMENT jugadoresFutbol (futbol)>
+<!ELEMENT futbol (jugador*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+]>
+<jugadoresFutbol>
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="A1"/>
+    <jugador nombre="Edison Arantes do Nascimento-Pelé" codigo="A2" />
+    <jugador nombre="Diego Armando Maradona" codigo="A3" />
+    <jugador nombre="Johan Cruyff" codigo="A4" />
+</futbol>
+</jugadoresFutbol>
+-->
+
+<!--
+<!DOCTYPE futbol [
+<!ELEMENT futbol ((jugador|equipo)*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!ELEMENT equipo EMPTY>
+<!ATTLIST equipo nombre CDATA #REQUIRED>
+<!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+    <jugador nombre="Edison Arantes do Nascimento" codigo="ean" />
+    <jugador nombre="Diego Armando Maradona" codigo="dam" />
+    <jugador nombre="Johan Cruyff" codigo="jc" />
+    <equipo nombre="Società Sportiva Calcio Napoli" jugadores="dam" />
+    <equipo nombre="Futbol Club Barcelona" jugadores="jc dam" />
+</futbol>
+-->
+
+<!-- CREAR DTD -->
+
+<!--
+<!DOCTYPE mensaje [
+<!ELEMENT mensaje (de, a, texto)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT a (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>
+<!ATTLIST mensaje prioridad (urgente|normal) "urgente" >
+<!ATTLIST texto idioma CDATA #REQUIRED >
+]>
+<mensaje prioridad="urgente">
+    <de>Juan Sanchez</de>
+    <a>Hans van Parijs</a>
+    <texto idioma="holandés">
+        Hallo Hans, hoe gaat het?
+        ...
+    </texto>
+</mensaje>
+-->
+<!--
+<!DOCTYPE tiendaAnimales [
+<!ELEMENT tiendaAnimales (perro)*>
+<!ELEMENT perro (nombre, raza, comentarios)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT raza (#PCDATA)>
+<!ELEMENT comentarios (#PCDATA)>
+<!ATTLIST perro fecha_nacimiento CDATA #REQUIRED>
+<!ATTLIST perro sexo (macho|hembra) "macho" >
+<!ATTLIST perro id ID #REQUIRED>
+<!ATTLIST perro padre IDREF #IMPLIED>
+<!ATTLIST perro madre IDREF #IMPLIED>
+<!ATTLIST perro otrosNombres CDATA #IMPLIED>
+<!ATTLIST perro veterinario CDATA #FIXED "Felix Marquez Sanz">
+]>
+<tiendaAnimales>
+    <perro fecha_nacimiento="24-12-2000" sexo="macho" id="d2" otrosNombres="Lassie">
+        <nombre>Lassin</nombre>
+        <raza>Caniche</raza>
+        <comentarios>Cariñoso</comentarios>
+    </perro>
+</tiendaAnimales>
+-->

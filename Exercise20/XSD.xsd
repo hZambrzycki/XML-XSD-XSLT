@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+    <xs:element name="personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="apellido" type="xs:string" />
+                            <xs:element name="fechanacimiento" type="xs:date"/>
+                            <xs:element name="numerodocumento" type="xs:int"/>
+                            <xs:conplex>
+                                <xs:sequence>
+                                    
+                                </xs:sequence>
+                            </xs:conplex>
+                            
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

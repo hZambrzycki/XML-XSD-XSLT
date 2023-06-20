@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<supermercado
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='XSD_EJ3.xsd'>
+    <articulo>
+        <descripcion></descripcion>
+        <marca></marca>
+        <medida></medida>
+        <seccion></seccion>
+        <oferta></oferta>
+        <perecedero></perecedero>
+    </articulo>
+    <articulo>
+        <descripcion></descripcion>
+        <marca></marca>
+        <medida></medida>
+        <seccion></seccion>
+        <oferta></oferta>
+        <perecedero></perecedero>
+    </articulo>
+    <articulo>
+        <descripcion></descripcion>
+        <marca></marca>
+        <medida></medida>
+        <seccion></seccion>
+        <oferta></oferta>
+        <perecedero></perecedero>
+    </articulo>
+
+</supermercado>
